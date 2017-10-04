@@ -12,21 +12,27 @@ body {
     background: #1D545D;
 }
 
-h1 {
-    font-size: 4em;
+button {
+    display: none;
 }
 
-p, a {
+h1 {
+    font-size: 3em !important;
+}
+
+p {
     font-size: 1.5em;
 }
 
-
-/*a {
-    background-color: #F7FBF5;
+p>a {
+    background-color: white;
     color: #1D545D;
+    padding: 15px 30px;
     border-radius: 10px;
-    padding: 5px 10px;
-}*/
+    font-size: 1.5em;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
 
 
 /* CLASSES ------------ */
@@ -43,10 +49,34 @@ p, a {
     color: #F26B6D;
 }
 
-.mar-top {
+.mar-top-30 {
     margin-top: 30px;
+}
+
+.mar-top-70 {
+    margin-top: 70px;
+}
+
+.mar-top-100 {
+    margin-top: 100px;
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+
+/* IDs ------------ */
+
+
+/* Pseudoclasses ------------ */
+
+p>a:hover {
+    background-color: #1D545D;
+    color: #F7FBF5;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 3px solid #F7FBF5;
 }
