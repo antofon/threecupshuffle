@@ -11,7 +11,7 @@
 <body>
     <h1 class="align-center mar-top-30">ThreeCupShuffle!</h1>
 
-    <section class="mar-top-70 rules">
+    <section class="mar-top-70" id="rules">
 
 
         <p class="align-center">The rules are simple: guess where the ball is located in any of the three cups.
@@ -24,24 +24,26 @@
         </p>
     </section>
 
-    <p class="align-center mar-top-100"><a>Let's Play!</a></p>
+    <p class="align-center mar-top-100" id="play"><a>Let's Play!</a></p>
 
     <div class="wrapper" id="begin">
         <section>
-            <!-- <img src="" alt="red cup"> -->
+            <img id="cup1" class="select-button" src="red_cup.svg" alt="red cup" width="220" height="220">
             <button type="button" name="button">This one!</button>
         </section>
 
         <section>
-            <!-- <img src="" alt="red cup"> -->
+            <img id="cup2" src="red_cup.svg" alt="red cup" width="220" height="220">
             <button type="button" name="button">This one!</button>
         </section>
 
         <section>
-            <!-- <img src="" alt="red cup"> -->
+            <img id="cup3" src="red_cup.svg" alt="red cup" width="220" height="220">
             <button type="button" name="button">This one!</button>
         </section>
     </div>
+    <script type="text/javascript" src="script.js">
+    </script>
 </body>
 
 </html>
