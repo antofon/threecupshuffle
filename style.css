@@ -12,10 +12,6 @@ body {
     background: #1D545D;
 }
 
-button {
-    display: none;
-}
-
 h1 {
     font-size: 3em !important;
 }
@@ -41,8 +37,30 @@ p>a {
     text-align: center;
 }
 
+.button {
+    background-color: #5BC4BF;
+    color: #1D545D;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
 .correct {
     color: #5BC4BF;
+}
+
+.float-left {
+    float: left;
 }
 
 .incorrect {
@@ -73,27 +91,17 @@ p>a {
 
 /* IDs ------------ */
 
-#cup1 {
-    width: 50%;
-    float: left;
-}
-
-#cup2 {
-    width: 50%;
-    float: left;
-}
-
-#cup3 {
-    width: 100%;
-    margin: 50px auto;
-}
-
 #rules {
     display: none;
 }
 
 
-/* Pseudoclasses & Pseudoelements ------------ */
+/* Pseudoclasses ------------ */
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
 
 p>a:hover {
     background-color: #1D545D;
@@ -104,6 +112,3 @@ p>a:hover {
     cursor: pointer;
     border: 3px solid #F7FBF5;
 }
-
-
-/* Pseudoclasses & Pseudoelements ------------ */
