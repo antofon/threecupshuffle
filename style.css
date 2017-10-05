@@ -65,11 +65,35 @@ p>a {
     text-transform: uppercase;
 }
 
+.wrapper {
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+}
+
 
 /* IDs ------------ */
 
+#cup1 {
+    width: 50%;
+    float: left;
+}
 
-/* Pseudoclasses ------------ */
+#cup2 {
+    width: 50%;
+    float: left;
+}
+
+#cup3 {
+    width: 100%;
+    margin: 50px auto;
+}
+
+#rules {
+    display: none;
+}
+
+
+/* Pseudoclasses & Pseudoelements ------------ */
 
 p>a:hover {
     background-color: #1D545D;
@@ -80,3 +104,6 @@ p>a:hover {
     cursor: pointer;
     border: 3px solid #F7FBF5;
 }
+
+
+/* Pseudoclasses & Pseudoelements ------------ */
