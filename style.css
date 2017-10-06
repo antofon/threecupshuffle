@@ -20,6 +20,9 @@ p {
     font-size: 1.5em;
 }
 
+
+/* using descendant selector > to access direct descendant of the parent p tag*/
+
 p>a {
     background-color: white;
     color: #1D545D;
@@ -137,9 +140,16 @@ p>a:hover {
 
 /* Media Queries ------------ */
 
+
+/*'min-width' used as mobile-first approach'*/
+
 @media (min-width: 550px) {
+    /* *= pinpoints any class with a 'col-' in its name*/
     [class*="col-"] {
         width: 50%;
+    }
+    .mar-top-70 {
+        margin-top: 0;
     }
     .wrapper {
         margin: 100px auto 0 auto;
@@ -151,12 +161,15 @@ p>a:hover {
         width: 33.3%;
     }
     #fixed-rules {
+        /*position is determined w/respect to body*/
         position: absolute;
         text-align: center;
-        position: absolute;
         top: 40px;
         left: 40px;
         font-size: 1.2em;
+    }
+    .mar-top-70 {
+        margin-top: 0;
     }
     .wrapper {
         margin: 150px auto 0 auto;
