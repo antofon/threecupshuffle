@@ -1,12 +1,12 @@
 * {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-weight: 300;
     color: #F7FBF5;
     text-decoration: none;
 }
 
 
-/* TAGS ------------ */
+/* HTML TAGS ------------ */
 
 body {
     background: #1D545D;
@@ -42,7 +42,7 @@ p>a {
     color: #1D545D;
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1.3em;
     margin-top: 15px;
 }
@@ -79,6 +79,12 @@ p>a {
     margin-top: 100px;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -110,9 +116,12 @@ p>a {
 
 /* Pseudoclasses ------------ */
 
+button:focus {
+    opacity: 0.75;
+}
+
 button:hover {
     cursor: pointer;
-    opacity: 0.75;
 }
 
 p>a:hover {
@@ -128,7 +137,19 @@ p>a:hover {
 
 /* Media Queries ------------ */
 
+@media (min-width: 550px) {
+    [class*="col-"] {
+        width: 50%;
+    }
+    .wrapper {
+        margin: 100px auto 0 auto;
+    }
+}
+
 @media (min-width: 850px) {
+    [class*="col-"] {
+        width: 33.3%;
+    }
     #fixed-rules {
         position: absolute;
         text-align: center;
@@ -136,5 +157,8 @@ p>a:hover {
         top: 40px;
         left: 40px;
         font-size: 1.2em;
+    }
+    .wrapper {
+        margin: 150px auto 0 auto;
     }
 }

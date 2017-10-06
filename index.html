@@ -5,13 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThreeCupShuffle | 100DaysofCode</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="align-center mar-top-30">ThreeCupShuffle!</h1>
-    <button type="button" name="button" id="fixed-rules" class="align-center">Show Rules</button>
+    <header>
+        <h1 class="align-center mar-top-30">ThreeCupShuffle!</h1>
+        <button type="button" name="button" id="fixed-rules" class="align-center">Show Rules</button>
+    </header>
 
     <section class="mar-top-70" id="rules">
         <p class="align-center">The rules are simple: guess where the ball is located in any of the three cups.
@@ -27,19 +30,21 @@
     <p class="align-center mar-top-100" id="play"><a>Let's Play!</a></p>
 
     <div class="wrapper" id="begin">
-        <div class="align-center col-6 float-left">
-            <img class="select-button" src="red_cup.svg" alt="red cup" width="220" height="220"><br>
-            <button type="button" name="button" class="button">This one!</button>
-        </div>
+        <div class="row">
+            <div class="align-center col-12 float-left">
+                <img class="select-button" src="red_cup.svg" alt="red cup" width="220" height="220"><br>
+                <button type="button" name="button" class="button">This one!</button>
+            </div>
 
-        <div class="align-center col-6 float-left">
-            <img class="select-button" src="red_cup.svg" alt="red cup" width="220" height="220"><br>
-            <button type="button" name="button" class="button">This one!</button>
-        </div>
+            <div class="align-center col-12 float-left">
+                <img class="select-button" src="red_cup.svg" alt="red cup" width="220" height="220"><br>
+                <button type="button" name="button" class="button">This one!</button>
+            </div>
 
-        <div class="align-center col-12">
-            <img class="select-button" src="red_cup.svg" alt="red cup" width="220" height="220"><br>
-            <button type="button" name="button" class="button">This one!</button>
+            <div class="align-center col-12 float-left">
+                <img class="select-button" id="cup3" src="red_cup.svg" alt="red cup" width="220" height="220"><br>
+                <button type="button" name="button" class="button">This one!</button>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
