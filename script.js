@@ -18,9 +18,23 @@ document.addEventListener("DOMContentLoaded", function(){
   var positionChoice = 0;
 
   cup1Button.addEventListener('click',function() {
+
     positionChoice = (Math.floor(Math.random() * 3)) + 1;
     if(firstPos === positionChoice) {
+      // var buttonElt = document.getElementsByTagName('button')[0];
+      // var replaceButton = document.createElement('span');
+      // replaceButton.innerHTML = buttonElt.innerHTML;
+      // buttonElt.parentNode.replaceChild(replaceButton,buttonElt);
+      // console.log(buttonElt);
       console.log('Correct! Your position is: ' + firstPos + ' and the ball is also at position: ' + positionChoice);
+
+      cup1.src = 'metallic_ball.svg';
+      cup1.style.width = '100px';
+      cup1.style.height = '100px';
+      cup1.style.marginTop = '80px';
+
+      // cup1Button.innerHTML = 'Correct!';
+      // cup1Button.className += 'correct';
     }
 
     else {
