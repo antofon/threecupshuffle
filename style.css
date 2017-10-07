@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    font-size: 3em !important;
+    font-size: 2.3em !important;
 }
 
 p {
@@ -108,7 +108,7 @@ p>a {
     display: none;
     background-color: #F7FBF5;
     color: #1D545D;
-    font-size: 1.3em;
+    font-size: 1em;
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
@@ -143,10 +143,22 @@ p>a:hover {
 
 /*'min-width' used as mobile-first approach'*/
 
+@media (min-width: 410px) {
+    h1 {
+        font-size: 3em !important
+    }
+    #fixed-rules {
+        font-size: 1.3em;
+    }
+}
+
 @media (min-width: 550px) {
     /* *= pinpoints any class with a 'col-' in its name*/
     [class*="col-"] {
         width: 50%;
+    }
+    #last-cup {
+        width: 100%;
     }
     .mar-top-70 {
         margin-top: 0;
@@ -158,6 +170,9 @@ p>a:hover {
 
 @media (min-width: 850px) {
     [class*="col-"] {
+        width: 33.3%;
+    }
+    #last-cup {
         width: 33.3%;
     }
     #fixed-rules {
