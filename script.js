@@ -62,6 +62,9 @@ document.addEventListener("DOMContentLoaded", function(){
       cup1.style.height = '100px';
       cup1.style.marginTop = '80px';
 
+      setTimeout(function(){
+        alert("Correct! Refresh the page to try again :)");
+      }, 300);
       console.log('Correct! Your position is: ' + firstPos + ' and the ball is also at position: ' + positionChoice);
     }
 
@@ -120,6 +123,9 @@ function guessSecondPos() {
       cup2.style.height = '100px';
       cup2.style.marginTop = '80px';
 
+      setTimeout(function(){
+        alert("Correct! Refresh the page to try again :)");
+      }, 300);
       console.log('Correct! Your position is: ' + secondPos + ' and the ball is also at position: ' + positionChoice);
     }
 
@@ -175,6 +181,9 @@ function guessThirdPos () {
       cup3.style.height = '100px';
       cup3.style.marginTop = '80px';
 
+      setTimeout(function(){
+        alert("Correct! Refresh the page to try again :)");
+      }, 300);
       console.log('Correct! Your position is: ' + thirdPos + ' and the ball is also at position: ' + positionChoice);
     }
 
